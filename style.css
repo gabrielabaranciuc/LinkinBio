@@ -1,0 +1,42 @@
+html {
+    background: black url(background.jpg) center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+body {
+    display: block;
+    text-rendering: optimizeSpeed;
+    margin: 0;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+@media (min-width: 500px) { body { display: grid; place-items: center;} }
+
+.container {
+    padding: 1rem;
+    background: rgba(79, 109, 245, 0.8);
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.5em;
+}
+@media (min-width: 300px) { .container { margin: 2vh; padding: 2rem; border-radius: 2rem; } }
+@media (min-width: 500px) { .container { margin: 5vw; padding: 3rem; } }
+
+    header {  }
+        .avatar { display: block; width: 112px; height: auto; 
+        margin: 0 auto 1em auto; border-radius: 50%; }
+        @media (min-width: 380px) { .avatar { float: left; margin: 0 1em 0 0; } }
+        .titlul-paginii { display: block; margin: 0 auto; font-size: clamp(2rem, 6vw, 4rem); line-height: 1em; text-align: center; }
+        @media (min-width: 380px) { .titlul-paginii { text-align: left; } }
+        .descriere-principala { display: block; margin: 0.5em 0 1.5em; }
+        @media (min-width: 500px) { .descriere-principala { margin-bottom: 0.5em; } }
+
+    main {  }
+        .lista-linkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff; }
+        @media (min-width: 1850px) { .lista-linkuri { display: grid; grid-template-columns: 1fr 1fr; } }
+            .lista-item { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff; }
+                .lista-link { display: block; padding: 0.5em; color: #fff; text-decoration: none; }
+                .lista-link:hover { background: rgba(255, 255, 255, 0.5); color: black; }
+                    .lista-titlu { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em; }
+                    .lista-text { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
