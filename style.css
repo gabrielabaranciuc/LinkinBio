@@ -1,5 +1,5 @@
 html {
-    background: black url(background.jpg) center center no-repeat;
+    background: black url(blue_background.jpg) center center no-repeat;
     background-size: cover;
     color: white;
 }
@@ -23,7 +23,7 @@ body {
 @media (min-width: 300px) { .container { margin: 2vh; padding: 2rem; border-radius: 2rem; } }
 @media (min-width: 500px) { .container { margin: 5vw; padding: 3rem; } }
 
-    header {  }
+    /* header {  } */
         .avatar { display: block; width: 112px; height: auto; 
         margin: 0 auto 1em auto; border-radius: 50%; }
         @media (min-width: 380px) { .avatar { float: left; margin: 0 1em 0 0; } }
@@ -32,7 +32,7 @@ body {
         .descriere-principala { display: block; margin: 0.5em 0 1.5em; }
         @media (min-width: 500px) { .descriere-principala { margin-bottom: 0.5em; } }
 
-    main {  }
+    /* main {  } */
         .lista-linkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff; }
         @media (min-width: 1850px) { .lista-linkuri { display: grid; grid-template-columns: 1fr 1fr; } }
             .lista-item { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff; }
